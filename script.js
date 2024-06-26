@@ -21,5 +21,5 @@ function calc() {
   P = Math.round(P * 100) / 100;
 
   console.log(P);
-  document.getElementById("result").textContent = P;
+  document.getElementById("result").textContent = P.toLocaleString();
 }
