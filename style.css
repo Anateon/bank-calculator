@@ -72,7 +72,7 @@ button {
 }
 
 button:hover {
-  background-color: darken(var(--button-background-color), 10%);
+  filter: brightness(85%);
 }
 
 p {
