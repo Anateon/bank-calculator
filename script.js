@@ -7,7 +7,7 @@ function calc() {
   // Data
   let netProfit = document.getElementById("net-profit").value
   let DSCR = 1.25;
-  let annualRate = document.getElementById("annual-rate").value
+  let annualRate = document.getElementById("annual-rate").value * 0.01;
   let monthlyRate = annualRate / 12;
   let termInYears = document.getElementById("period-in-years").value
   let months = termInYears * 12;

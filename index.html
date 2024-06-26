@@ -5,32 +5,29 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="style.css" />
-  <title>Browser</title>
+  <title>Калькулятор</title>
 </head>
 
 <body>
-  <h1>
-    Калькулятор
-  </h1>
-  <p>
-    <label for="net-profit">Чистая прибыль</label>
-    <input type="number" id="net-profit" name="net-profit" min="1" max="100" value="2384000" />
-  </p>
-  <p>
-    <label for="annual-rate">Годовая ставка</label>
-    <input type="number" id="annual-rate" name="annual-rate" min="1" max="100" value="0.20" />
-  </p>
-  <p>
-    <label for="period-in-years">Срок в годах</label>
-    <input type="number" id="period-in-years" name="period-in-years" min="1" max="100" value="5" />
-  </p>
+  <div class="container">
+    <h1>Калькулятор</h1>
+    <div class="input-group">
+      <label for="net-profit">Чистая прибыль</label>
+      <input type="number" id="net-profit" name="net-profit" min="1" value="2384000" />
+    </div>
+    <div class="input-group">
+      <label for="annual-rate">Годовая ставка (%)</label>
+      <input type="number" id="annual-rate" name="annual-rate" min="0" step="0.01" value="20" />
+    </div>
+    <div class="input-group">
+      <label for="period-in-years">Срок в годах</label>
+      <input type="number" id="period-in-years" name="period-in-years" min="1" value="5" />
+    </div>
 
-  <button type="button" id="button">Click Me!</button>
+    <button type="button" id="button">Рассчитать</button>
 
-  <p>
-    Результат:
-    <span id="result">123</result>
-  </p>
+    <p>Результат: <span id="result">...</span></p>
+  </div>
 
   <script src="script.js"></script>
 </body>
