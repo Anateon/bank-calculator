@@ -1,7 +1,9 @@
-const button = document.getElementById("button");
-const result = document.getElementById("result");
+document.getElementById("button").addEventListener("click", calc);
+document.getElementById("button2").addEventListener("click", calc2);
 
-button.addEventListener("click", calc);
+function rounding(number) {
+  return parseFloat(number.toFixed(2)).toLocaleString()
+}
 
 function calc() {
   // Data
@@ -17,9 +19,19 @@ function calc() {
   let monthlyDebtPayment = annualDebtPayment / 12;
 
   // Calculation of maximum loan limit
-  let P = (monthlyDebtPayment * (1 - Math.pow((1 + monthlyRate), -months))) / monthlyRate;
-  P = Math.round(P * 100) / 100;
+  let result = rounding((monthlyDebtPayment * (1 - Math.pow((1 + monthlyRate), -months))) / monthlyRate);
 
-  console.log(P);
-  document.getElementById("result").textContent = P.toLocaleString();
+  console.log(result);
+  document.getElementById("result").textContent = result;
+}
+
+
+function calc2() {
+  let annualRevenue = document.getElementById("annual-revenue").value
+
+  let revolvingCreditResult = rounding(annualRevenue / 12 * 2);
+  let overdraftResult = rounding(annualRevenue / 12 * 0.3);
+
+  document.getElementById("revolving-credit-result").textContent = revolvingCreditResult;
+  document.getElementById("overdraft-result").textContent = overdraftResult;
 }

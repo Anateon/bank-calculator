@@ -25,7 +25,7 @@
 
 <body>
   <div class="container">
-    <h1>Калькулятор</h1>
+    <!--<h1>Калькулятор</h1>-->
     <div class="input-group">
       <label for="net-profit">Чистая прибыль за год</label>
       <input type="number" id="net-profit" name="net-profit" min="1" />
@@ -36,12 +36,25 @@
     </div>
     <div class="input-group">
       <label for="period-in-years">Срок в годах</label>
-      <input type="number" id="period-in-years" name="period-in-years" min="1" >
+      <input type="number" id="period-in-years" name="period-in-years" min="1" />
     </div>
 
     <button type="button" id="button">Рассчитать</button>
 
     <p>Результат: <span id="result">...</span></p>
+  </div>
+
+  <div class="container">
+    <!--<h1>Калькулятор</h1>-->
+    <div class="input-group">
+        <label for="annual-revenue">Годовая выручка</label>
+      <input type="number" id="annual-revenue" name="annual-revenue" min="1" />
+    </div>
+    <button type="button" id="button2">Рассчитать</button>
+
+    <p>Оборотный кредит: <span id="revolving-credit-result">...</span></p>
+    <p>Овердрафт: <span id="overdraft-result">...</span></p>
+
   </div>
 
   <script src="script.js"></script>
