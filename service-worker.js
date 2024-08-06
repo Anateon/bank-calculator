@@ -1,4 +1,4 @@
-const cacheName = 'calculator-cache-v2';
+const cacheName = 'calculator-cache-v3';
 const appShellFiles = [
   '/bank-calculator/',
   '/bank-calculator/index.html',
@@ -20,6 +20,7 @@ self.addEventListener('install', (e) => {
         console.error('[Service Worker] Caching failed', err);
       }
     })());
+    self.skipWaiting();
 });
 
 self.addEventListener('activate', (e) => {
