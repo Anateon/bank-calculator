@@ -1,4 +1,4 @@
-const cacheName = 'calculator-cache-v3';
+const cacheName = 'calculator-cache-v4';
 const appShellFiles = [
   '/bank-calculator/',
   '/bank-calculator/index.html',
