@@ -11,7 +11,7 @@ function calc() {
   let DSCR = 1.413;
   let annualRate = document.getElementById("annual-rate").value * 0.01;
   let monthlyRate = annualRate / 12;
-  let months = document.getElementById("period-in-years").value
+  let months = document.getElementById("period-in-month").value
 
   // Calculation of annual and monthly debt payments
   let annualDebtPayment = netProfit / DSCR;
