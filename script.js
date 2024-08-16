@@ -8,7 +8,7 @@ function rounding(number) {
 function calc() {
   // Data
   let netProfit = document.getElementById("net-profit").value
-  let DSCR = 1.35;
+  let DSCR = 1.413;
   let annualRate = document.getElementById("annual-rate").value * 0.01;
   let monthlyRate = annualRate / 12;
   let termInYears = document.getElementById("period-in-years").value
